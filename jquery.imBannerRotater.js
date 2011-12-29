@@ -645,8 +645,8 @@ $.bannerRotater = function(obj, opts) {
 	
 	function initImageSize(img, cnt) {
 		var imgH, imgSize;
-		var w = $(img).attr('width');
-		var h = $(img).attr('height');
+		var w = $(img).width();
+		var h = $(img).height();
 		imgSize = getNewSize(w, h, opts.steps_small_height, 'height');
 		lrgSize = getNewSize(w, h, opts.steps_large_height, 'height');
 		//imgH = (cnt == 1) ? opts.steps_large_height: opts.steps_small_height;
